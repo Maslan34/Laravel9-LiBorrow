@@ -250,12 +250,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                        <span class="menu-title">Sample Pages</span>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#general-{{asset('assetsForAdmin')}}/pages" aria-expanded="false" aria-controls="general-{{asset('assetsForAdmin')}}/pages">
+                        <span class="menu-title">Sample {{asset('assetsForAdmin')}}/pages</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-medical-bag menu-icon"></i>
                     </a>
-                    <div class="collapse" id="general-pages">
+                    <div class="collapse" id="general-{{asset('assetsForAdmin')}}/pages">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/blank-page.html"> Blank Page </a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/login.html"> Login </a></li>
@@ -291,7 +291,7 @@
                     <h3 class="page-title">
                 <span class="page-title-icon bg-gradient-primary text-white me-2">
                   <i class="mdi mdi-home"></i>
-                </span> Dashboard
+                </span> Category List
                     </h3>
                     <nav aria-label="breadcrumb">
                         <ul class="breadcrumb">

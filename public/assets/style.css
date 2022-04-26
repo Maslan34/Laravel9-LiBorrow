@@ -1,6 +1,6 @@
 
 /*
-Template Name: Kindle
+Template Name: Kindle	
 Author: MarkUps
 Author URI: http://www.markups.io/
 Version: 1.0
@@ -10,8 +10,8 @@ Version: 1.0
 /* Table of Content
 ==================================================
 #BASIC TYPOGRAPHY
-#HEADER
-#MENU
+#HEADER	
+#MENU 
 #HERO SECTION
 #COUNTER
 #BOOK OVERVIEW
@@ -53,9 +53,9 @@ ul li {
 	line-height: 1.59;
 }
 
-a {
+a { 
 	text-decoration: none;
-	color: #2f2f2f;
+	color: #2f2f2f;  
 }
 
 a:hover,
@@ -80,25 +80,25 @@ h1 {
 	font-size: 38px;
 }
 
-h2 {
-	font-size: 32px;
-	line-height: 1.13;
+h2 {  
+	font-size: 32px; 
+	line-height: 1.13; 
 }
 
-h3 {
-	font-size: 26px;
+h3 {  
+	font-size: 26px;  
 }
 
-h4 {
-	font-size: 22px;
+h4 {  
+	font-size: 22px;  
 }
 
-h5 {
-	font-size: 20px;
+h5 {  
+	font-size: 20px;  
 }
 
-h6 {
-	font-size: 18px;
+h6 {  
+	font-size: 18px;  
 }
 
 img {
@@ -157,7 +157,7 @@ blockquote {
 	background-color: #f8f8f8;
 	border-radius: 0 4px 4px 0;
 	padding: 5px 15px;
-
+	
 }
 
 blockquote p {
@@ -189,7 +189,7 @@ button:focus {
 .alignright {
 	float:right;
 	margin-left:8px;
-}
+}		
 
 .alignnone {
 	max-width: 100%;
@@ -316,8 +316,8 @@ button:focus {
 	color: #fff;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
 .navbar-default .navbar-nav > .active > a:hover{
 	background-color: transparent;
 	color: #fff;
@@ -336,7 +336,7 @@ button:focus {
 }
 
 .navbar-default .mu-menu li.active a:after,
-.navbar-default .mu-menu li a:hover:after,
+.navbar-default .mu-menu li a:hover:after, 
 .navbar-default .mu-menu li a:focus:after {
     width: 100%;
 }
@@ -530,7 +530,7 @@ button:focus {
 
 
 #mu-video-review {
-	background-image: url(images/video-review-bg.jpeg);
+	background-image: url(assets/images/video-review-bg.jpeg);
 	background-attachment: fixed;
 	background-size: cover;
 	display: inline;
@@ -556,7 +556,7 @@ button:focus {
 	width: 100%;
 }
 
-.mu-video-review-area .mu-heading-title,
+.mu-video-review-area .mu-heading-title, 
 .mu-video-review-area .mu-heading-area p{
 	color: #fff;
 }
@@ -758,7 +758,7 @@ button:focus {
 /*--------------------*/
 
 #mu-testimonials {
-	background-image: url("public/assets/testimonials-bg.jpeg");
+	background-image: url("assets/images/testimonials-bg.jpeg");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -915,8 +915,8 @@ button:focus {
 .mu-contact-form .form-control:focus {
 	background-color: #fff;
     outline: 0;
-    box-shadow: none;
-}
+    box-shadow: none;    
+} 
 
 .mu-contact-form .form-control::-webkit-input-placeholder {
 	color: #888;
@@ -925,7 +925,7 @@ button:focus {
 
 .mu-contact-form .form-control:-moz-placeholder { /* Firefox 18- */
 	color: #888;
-	font-size: 15px;
+	font-size: 15px; 
 }
 
 .mu-contact-form .form-control::-moz-placeholder {  /* Firefox 19+ */
@@ -933,14 +933,14 @@ button:focus {
 	font-size: 15px;
 }
 
-.mu-contact-form .form-control:-ms-input-placeholder {
+.mu-contact-form .form-control:-ms-input-placeholder {  
 	color: #888;
 	font-size: 15px;
 }
 
 .mu-contact-form .button-default::after,
 .mu-contact-form .button-default > span {
-	padding: 12px 40px;
+	padding: 12px 40px;  
 }
 
 #form-messages {
@@ -1044,7 +1044,7 @@ button:focus {
 /*--------------------*/
 
 @media (max-width: 1199px) {
-
+	
 	.mu-hero-left h1 {
 		font-size: 36px;
 	}
@@ -1066,7 +1066,7 @@ button:focus {
 		height: 450px;
 	}
 
-
+	
 }
 
 @media (max-width: 991px) {
@@ -1075,11 +1075,11 @@ button:focus {
 	.mu-fixed-nav .navbar-brand img {
 		margin-top: -7px;
 	}
-
+	
 	.navbar-default .mu-menu li a {
 		font-size: 14px;
 		margin: 10px 5px;
-	}
+	}	
 
 	#mu-hero {
 		padding: 130px 0 30px;
@@ -1110,7 +1110,7 @@ button:focus {
 	.mu-contact-right {
 		margin-top: 50px;
 	}
-
+	
 	.mu-video-review-content {
 		padding: 0 5%;
 	}
@@ -1118,7 +1118,7 @@ button:focus {
 	.mu-video-iframe {
 		height: 400px;
 	}
-
+		
 }
 
 @media (max-width: 767px) {
@@ -1168,8 +1168,8 @@ button:focus {
 	.mu-contact-content {
 		padding: 0 10%;
 	}
-
-
+	
+		
 }
 
 
@@ -1178,7 +1178,7 @@ button:focus {
 	#mu-header.mu-fixed-nav {
 		padding: 10px 0;
 	}
-
+	
 	.mu-heading-area {
 		padding: 0;
 	}
@@ -1196,7 +1196,7 @@ button:focus {
 	.slick-dots {
 		bottom: 15px;
 	}
-
+			
 
 }
 
@@ -1256,7 +1256,7 @@ button:focus {
 	.mu-contact-form button {
 		width: 100%;
 	}
-
+	
 }
 
 
@@ -1294,16 +1294,16 @@ button:focus {
 		padding: 1rem 1rem;
 		font-size: 12px;
 	}
-
+	
 }
 
 
 
 @media (max-width: 320px){
-
-
-
-
-
+	
+	
+	
+	
+	
 }
 
