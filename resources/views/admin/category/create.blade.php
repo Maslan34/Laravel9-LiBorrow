@@ -298,11 +298,11 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail3">Please enter keywords</label>
-                            <input type="email" class="form-control" name="keywords" placeholder="keywords">
+                            <input type="text" class="form-control" name="keywords" placeholder="keywords">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword4">Please enter description</label>
-                            <input type="password" class="form-control" name="description" placeholder="description">
+                            <input type="text" class="form-control" name="description" placeholder="description">
                         </div>
                         <div class="form-group">
                             <label for="exampleSelectGender">Status</label>
