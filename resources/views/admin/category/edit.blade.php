@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Category List</title>
+    <title>Edit Page</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/css/vendor.bundle.base.css">
@@ -250,12 +250,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#general-{{asset('assetsForAdmin')}}/pages" aria-expanded="false" aria-controls="general-{{asset('assetsForAdmin')}}/pages">
                         <span class="menu-title">Sample Pages</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-medical-bag menu-icon"></i>
                     </a>
-                    <div class="collapse" id="general-pages">
+                    <div class="collapse" id="general-{{asset('assetsForAdmin')}}/pages">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/blank-page.html"> Blank Page </a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/login.html"> Login </a></li>
@@ -285,65 +285,57 @@
             </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
-            <div class="content-wrapper">
-                <div class="page-header">
-                    <h3 class="page-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2">
-                  <i class="mdi mdi-home"></i>
-                </span> Category List
-                    </h3>
-                    <nav aria-label="breadcrumb">
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item active" aria-current="page">
-                                <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                            </li>
-                        </ul>
-                    </nav>
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Edit Category: {{$data->title}}</h4>
+                    <p class="card-description"> Category Elements </p>
+                    <form class="forms-sample" action="/admin/category/update/{{$data->id}}" method="POST">
+                        @csrf
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter title</label>
+                            <input type="text" class="form-control" name="title" value="{{$data->title}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail3">Please enter keywords</label>
+                            <input type="text" class="form-control" name="keywords" value="{{$data->keywords}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea1">Textarea</label>
+                            <textarea class="form-control" id="exampleTextarea1" rows="4" placeholder="{{$data->description}}"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelectGender">Status</label>
+                            <select class="form-control" id="exampleSelectGender" name="status" placeholder="{{$data->status}}">
+                                <option>True</option>
+                                <option>False</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>File upload</label>
+                            <input type="file" name="img[]" class="file-upload-default">
+                            <div class="input-group col-xs-12">
+                                <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
+                                <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                          </span>
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Basic Table</h4>
-                        <p class="card-description"> Add class <code>.table</code>
-                        </p>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Keywords</th>
-                                <th>Description</th>
-                                <th>Image</th>
-                                <th>Status</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
-                                <th>Show</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($data as $RowSet)
-                            <tr>
-
-                                <td>{{$RowSet->id}}</td>
-                                <td>{{$RowSet->title}}</td>
-                                <td>{{$RowSet->keywords}}</td>
-                                <td>{{$RowSet->description}}</td>
-                                <td>{{$RowSet->image}}</td>
-                                <td>{{$RowSet->status}}</td>
-                                <td><a href="/admin/category/edit/{{$RowSet->id}}"><button type="button"  class="btn btn-gradient-danger btn-rounded btn-fw">Edit</button></a><td>
-                                <td><a href="/admin/category/delete/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
-                                <td><a href="/admin/category/show/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Show</button></a><td>
-                            </tr>
-                            @endforeach
+            </div>
+        </div>
 
 
-                            </tbody>
-                        </table>
+
                     </div>
+
                 </div>
-
-
-
+            </div>
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
             <footer class="footer">
