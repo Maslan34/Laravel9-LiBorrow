@@ -207,73 +207,97 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/index.html">
+                    <a class="nav-link" href="/admin">
                         <span class="menu-title">Dashboard</span>
                         <i class="mdi mdi-home menu-icon"></i>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                        <span class="menu-title">Basic UI Elements</span>
-                        <i class="menu-arrow"></i>
-                        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-                    </a>
-                    <div class="collapse" id="ui-basic">
-                        <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/ui-features/buttons.html">Buttons</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/ui-features/typography.html">Typography</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/icons/mdi.html">
-                        <span class="menu-title">Icons</span>
-                        <i class="mdi mdi-contacts menu-icon"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/forms/basic_elements.html">
-                        <span class="menu-title">Forms</span>
-                        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/charts/chartjs.html">
-                        <span class="menu-title">Charts</span>
-                        <i class="mdi mdi-chart-bar menu-icon"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/tables/basic-table.html">
-                        <span class="menu-title">Tables</span>
-                        <i class="mdi mdi-table-large menu-icon"></i>
-                    </a>
-                </li>
+
+
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                        <span class="menu-title">Sample Pages</span>
+                        <span class="menu-title">Requests</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-medical-bag menu-icon"></i>
                     </a>
                     <div class="collapse" id="general-pages">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/blank-page.html"> Blank Page </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/login.html"> Login </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/register.html"> Register </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/error-404.html"> 404 </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/error-500.html"> 500 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#"> ongoing Requests </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#"> Completed Requests </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#"> Register </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#"> 404 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#"> 500 </a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item sidebar-actions">
-              <span class="nav-link">
-                <div class="border-bottom">
-                  <h6 class="font-weight-normal mb-3">Projects</h6>
-                </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title">Categories</span>
+                        <i class="mdi mdi-apps"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title icon-lg">Products</span>
+                        <i class="mdi mdi-border-all"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title">Users</span>
+                        <i class="mdi mdi-account-box"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title">Comments</span>
+                        <i class="mdi mdi-comment"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title">Messages</span>
+                        <i class="mdi mdi-bell-ring-outline"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title">Social</span>
+                        <i class="mdi mdi-account-multiple"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title">FAQ</span>
+                        <i class="mdi mdi-comment-question-outline"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <span class="menu-title">Settings</span>
+                        <i class="mdi mdi-settings"></i>
+                    </a>
+                </li>
+
+                    <span class="nav-link">
+
+
+
+
+
                 <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
                 <div class="mt-4">
                   <div class="border-bottom">
-                    <p class="text-secondary">Categories</p>
+                    <p class="text-secondary">Membership Categories</p>
                   </div>
                   <ul class="gradient-bullet-list mt-4">
                     <li>Free</li>
@@ -301,6 +325,11 @@
                         </ul>
                     </nav>
                 </div>
+
+                <div class="page-header">
+                    <a href="/admin/category/create" ><button  type="button" href="/admin/category/create" class="btn btn-inverse-primary btn-fw ">Add Category</button> </a>
+                </div>
+
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Basic Table</h4>
