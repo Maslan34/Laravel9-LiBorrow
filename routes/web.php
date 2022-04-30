@@ -51,6 +51,7 @@ Route::get('/admin/category/create',[AdminCategoryController::class,'create'])->
 Route::post('/admin/category/store',[AdminCategoryController::class,'store'])->name('admin_category_store');//the path we used here defined at the top as a AdminCategoryContoller
 Route::get('/admin/category/edit/{id}',[AdminCategoryController::class,'edit'])->name('admin_category_edit');//the path we used here defined at the top as a AdminCategoryContoller
 Route::post('/admin/category/update/{id}',[AdminCategoryController::class,'update'])->name('admin_category_update');//the path we used here defined at the top as a AdminCategoryContoller
+Route::get('/admin/category/show/{id}',[AdminCategoryController::class,'show'])->name('admin_category_show');//the path we used here defined at the top as a AdminCategoryContoller
 
 
 
