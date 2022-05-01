@@ -42,8 +42,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo" href="{{asset('assetsForAdmin')}}/index.html"><img src="{{asset('assetsForAdmin')}}/images/logo.svg" alt="logo" /></a>
-            <a class="navbar-brand brand-logo-mini" href="{{asset('assetsForAdmin')}}/index.html"><img src="{{asset('assetsForAdmin')}}/images/logo-mini.svg" alt="logo" /></a>
+            <a class="navbar-brand brand-logo" href="{{route('admin.index')}}"><img src="{{asset('assetsForAdmin')}}/images/logo.svg" alt="logo" /></a>
+            <a class="navbar-brand brand-logo-mini" href="{{route('admin.index')}}"><img src="{{asset('assetsForAdmin')}}/images/logo-mini.svg" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -207,7 +207,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Dashboard</span>
                         <i class="mdi mdi-home menu-icon"></i>
                     </a>
@@ -233,56 +233,56 @@
                 <li class="nav-item sidebar-actions">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Categories</span>
                         <i class="mdi mdi-apps"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title icon-lg">Products</span>
                         <i class="mdi mdi-border-all"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Users</span>
                         <i class="mdi mdi-account-box"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Comments</span>
                         <i class="mdi mdi-comment"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Messages</span>
                         <i class="mdi mdi-bell-ring-outline"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Social</span>
                         <i class="mdi mdi-account-multiple"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">FAQ</span>
                         <i class="mdi mdi-comment-question-outline"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Settings</span>
                         <i class="mdi mdi-settings"></i>
                     </a>

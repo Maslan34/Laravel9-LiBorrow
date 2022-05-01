@@ -43,16 +43,21 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 //************ADMİN PANEL**********************
-Route::get('/admin',[AdminController::class,'indexAdmin'])->name('admin');
+Route::prefix('admin')->name('admin.')->group(function () { // php artisan route:list check with this
+Route::get('/',[AdminController::class,'indexAdmin'])->name('index');
 
 //************ADMİN PANEL CATEGORY ROUTES**********************
-Route::get('/admin/category',[AdminCategoryController::class,'index'])->name('admin_category'); //the path we used here defined at the top as a AdminCategoryContoller
-Route::get('/admin/category/create',[AdminCategoryController::class,'create'])->name('admin_category_create');//the path we used here defined at the top as a AdminCategoryContoller
-Route::post('/admin/category/store',[AdminCategoryController::class,'store'])->name('admin_category_store');//the path we used here defined at the top as a AdminCategoryContoller
-Route::get('/admin/category/edit/{id}',[AdminCategoryController::class,'edit'])->name('admin_category_edit');//the path we used here defined at the top as a AdminCategoryContoller
-Route::post('/admin/category/update/{id}',[AdminCategoryController::class,'update'])->name('admin_category_update');//the path we used here defined at the top as a AdminCategoryContoller
-Route::get('/admin/category/show/{id}',[AdminCategoryController::class,'show'])->name('admin_category_show');//the path we used here defined at the top as a AdminCategoryContoller
-
+        Route::prefix('/category')->name('category.')->controller(AdminCategoryController::class)->group(function () {
+        Route::get('','index')->name('index'); //the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/create','create')->name('create');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::post('/store','store')->name('store');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/edit/{id}','edit')->name('edit');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::post('/update/{id}','update')->name('update');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::post('/destroy/{id}','destroy')->name('destroy');//the path we used here defined at the top as a AdminCategoryContoller
+Route::get('/show/{id}','show'
+)->name('show');//the path we used here defined at the top as a AdminCategoryContoller
+});
+});
 
 
 //************ADMİN PANEL**********************

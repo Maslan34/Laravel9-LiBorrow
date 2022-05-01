@@ -17,7 +17,7 @@ class CategoryController extends Controller
     {
 
         $data= Category::all();// getting data from data base
-        return view('admin.category.adminIndex',['data' => $data]);
+        return view('admin.category.adminCategoryIndex',['data' => $data]);
     }
 
     /**
