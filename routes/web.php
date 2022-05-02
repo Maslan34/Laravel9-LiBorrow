@@ -53,7 +53,7 @@ Route::get('/',[AdminController::class,'indexAdmin'])->name('index');
         Route::post('/store','store')->name('store');//the path we used here defined at the top as a AdminCategoryContoller
         Route::get('/edit/{id}','edit')->name('edit');//the path we used here defined at the top as a AdminCategoryContoller
         Route::post('/update/{id}','update')->name('update');//the path we used here defined at the top as a AdminCategoryContoller
-        Route::post('/destroy/{id}','destroy')->name('destroy');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/destroy/{id}','destroy')->name('destroy');//the path we used here defined at the top as a AdminCategoryContoller
 Route::get('/show/{id}','show'
 )->name('show');//the path we used here defined at the top as a AdminCategoryContoller
 });

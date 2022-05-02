@@ -357,10 +357,15 @@
                                 <td>{{$RowSet->title}}</td>
                                 <td>{{$RowSet->keywords}}</td>
                                 <td>{{$RowSet->description}}</td>
-                                <td>{{$RowSet->image}}</td>
+                                <td>
+                                    @if($RowSet->image)
+                                        <img src="{{\Illuminate\Support\Facades\Storage::url($RowSet->image)}}" style="height: 50px">
+                                    @endif
+                                </td>
+
                                 <td>{{$RowSet->status}}</td>
                                 <td><a href="/admin/category/edit/{{$RowSet->id}}"><button type="button"  class="btn btn-gradient-danger btn-rounded btn-fw">Edit</button></a><td>
-                                <td><a href="/admin/category/delete/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
+                                <td><a href="/admin/category/destroy/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
                                 <td><a href="/admin/category/show/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Show</button></a><td>
                             </tr>
                             @endforeach
@@ -404,5 +409,6 @@
 <script src="{{asset('assetsForAdmin')}}/js/dashboard.js"></script>
 <script src="{{asset('assetsForAdmin')}}/js/todolist.js"></script>
 <!-- End custom js for this page -->
+</div>
 </body>
 </html>
