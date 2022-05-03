@@ -1,4 +1,3 @@
-
 <!-- Start main content -->
 
 <main role="main">
@@ -233,7 +232,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mu-author-image">
-                                        <img src="../../../public/assets/images/author.jpg" alt="Author Image">
+                                        <img src="assets/images/author.jpg" alt="Author Image">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -242,7 +241,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo suscipit facilis ipsum ullam reiciendis odio error iste neque ratione libero rem accusamus voluptatibus, nihil unde maiores sunt nisi. Assumenda, consectetur.</p>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, dolorem error neque! Dolores similique ut iusto odit esse ipsam, nesciunt pariatur animi minima maiores mollitia cupiditate ad ipsum deleniti perspiciatis!</p>
-                                        <img class="mu-author-sign" src="../../../public/assets/images/author-signature.png" alt="Author Signature">
+                                        <img class="mu-author-sign" src="assets/images/author-signature.png" alt="Author Signature">
 
                                         <div class="mu-author-social">
                                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -391,21 +390,21 @@
 
                                 <li>
                                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-                                    <img class="mu-rt-img" src="../../../public/assets/images/reader-1.jpg" alt="img">
+                                    <img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="img">
                                     <h5 class="mu-rt-name"> - Alice Boga</h5>
                                     <span class="mu-rt-title">CEO, Apple Inc.</span>
                                 </li>
 
                                 <li>
                                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-                                    <img class="mu-rt-img" src="../../../public/assets/images/reader-2.jpg" alt="img">
+                                    <img class="mu-rt-img" src="assets/images/reader-2.jpg" alt="img">
                                     <h5 class="mu-rt-name"> - Jhon Doe</h5>
                                     <span class="mu-rt-title">Director, Google Inc.</span>
                                 </li>
 
                                 <li>
                                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-                                    <img class="mu-rt-img" src="../../../public/assets/images/reader-3.jpg" alt="img">
+                                    <img class="mu-rt-img" src="assets/images/reader-3.jpg" alt="img">
                                     <h5 class="mu-rt-name"> - Jessica Doe</h5>
                                     <span class="mu-rt-title">Web Developer</span>
                                 </li>

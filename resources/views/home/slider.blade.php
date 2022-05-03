@@ -23,4 +23,4 @@
     </div>
 </section>
 
-<!-- Start Featured Slider -->
+<!-- End Featured Slider -->

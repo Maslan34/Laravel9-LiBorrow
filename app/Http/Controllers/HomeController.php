@@ -14,10 +14,11 @@ class HomeController extends Controller
     }
 
     public function  welcome(){
-        return view('home.index.blade');
+        return view('welcome');
     }
 
-    public function  param(){
-        return view('home.test');
+    public function  index(){
+        return view('home.index');
     }
+
 }

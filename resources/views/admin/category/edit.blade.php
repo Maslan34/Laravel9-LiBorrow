@@ -289,9 +289,10 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Edit Category: {{$data->title}}</h4>
-                    <p class="card-description"> Category Elements </p>
                     <form class="forms-sample" action="/admin/category/update/{{$data->id}}" method="POST" enctype="multipart/form-data">
                         @csrf
+
+
                         <div class="form-group">
                             <label for="exampleInputName1">Please enter title</label>
                             <input type="text" class="form-control" name="title" value="{{$data->title}}">

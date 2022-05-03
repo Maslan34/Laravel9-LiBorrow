@@ -19,7 +19,7 @@ use App\Http\Controllers\AdminPanel\CategoryController as AdminCategoryControlle
 Route::get('/welcome',[HomeController::class,'welcome'])->name('welcome');
 
 Route::get('/', function () {
-    return view('layouts.frontbase');
+    return view('home.index');
 });
 
 Route::get('/test',[HomeController::class,'test'])->name('test');

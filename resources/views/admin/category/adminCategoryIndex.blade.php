@@ -288,7 +288,7 @@
                     </a>
                 </li>
 
-                    <span class="nav-link">
+                <span class="nav-link">
 
 
 
@@ -332,8 +332,6 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Basic Table</h4>
-                        <p class="card-description"> Add class <code>.table</code>
                         </p>
                         <table class="table">
                             <thead>
@@ -351,23 +349,23 @@
                             </thead>
                             <tbody>
                             @foreach($data as $RowSet)
-                            <tr>
+                                <tr>
 
-                                <td>{{$RowSet->id}}</td>
-                                <td>{{$RowSet->title}}</td>
-                                <td>{{$RowSet->keywords}}</td>
-                                <td>{{$RowSet->description}}</td>
-                                <td>
-                                    @if($RowSet->image)
-                                        <img src="{{\Illuminate\Support\Facades\Storage::url($RowSet->image)}}" style="height: 50px">
-                                    @endif
-                                </td>
+                                    <td>{{$RowSet->id}}</td>
+                                    <td>{{$RowSet->title}}</td>
+                                    <td>{{$RowSet->keywords}}</td>
+                                    <td>{{$RowSet->description}}</td>
+                                    <td>
+                                        @if($RowSet->image)
+                                            <img src="{{\Illuminate\Support\Facades\Storage::url($RowSet->image)}}" style="height: 50px">
+                                        @endif
+                                    </td>
 
-                                <td>{{$RowSet->status}}</td>
-                                <td><a href="/admin/category/edit/{{$RowSet->id}}"><button type="button"  class="btn btn-gradient-danger btn-rounded btn-fw">Edit</button></a><td>
-                                <td><a href="/admin/category/destroy/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
-                                <td><a href="/admin/category/show/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Show</button></a><td>
-                            </tr>
+                                    <td>{{$RowSet->status}}</td>
+                                    <td><a href="/admin/category/edit/{{$RowSet->id}}"><button type="button"  class="btn btn-gradient-danger btn-rounded btn-fw">Edit</button></a><td>
+                                    <td><a href="/admin/category/destroy/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
+                                    <td><a href="/admin/category/show/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Show</button></a><td>
+                                </tr>
                             @endforeach
 
 
@@ -378,37 +376,37 @@
 
 
 
-            <!-- content-wrapper ends -->
-            <!-- partial:partials/_footer.html -->
-            <footer class="footer">
-                <div class="container-fluid d-flex justify-content-between">
-                    <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-                    <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
-                </div>
-            </footer>
-            <!-- partial -->
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+                        <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
         </div>
-        <!-- main-panel ends -->
+        <!-- page-body-wrapper ends -->
     </div>
-    <!-- page-body-wrapper ends -->
-</div>
-<!-- container-scroller -->
-<!-- plugins:js -->
-<script src="{{asset('assetsForAdmin')}}/vendors/js/vendor.bundle.base.js"></script>
-<!-- endinject -->
-<!-- Plugin js for this page -->
-<script src="{{asset('assetsForAdmin')}}/vendors/chart.js/Chart.min.js"></script>
-<script src="{{asset('assetsForAdmin')}}/js/jquery.cookie.js" type="text/javascript"></script>
-<!-- End plugin js for this page -->
-<!-- inject:js -->
-<script src="{{asset('assetsForAdmin')}}/js/off-canvas.js"></script>
-<script src="{{asset('assetsForAdmin')}}/js/hoverable-collapse.js"></script>
-<script src="{{asset('assetsForAdmin')}}/js/misc.js"></script>
-<!-- endinject -->
-<!-- Custom js for this page -->
-<script src="{{asset('assetsForAdmin')}}/js/dashboard.js"></script>
-<script src="{{asset('assetsForAdmin')}}/js/todolist.js"></script>
-<!-- End custom js for this page -->
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="{{asset('assetsForAdmin')}}/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="{{asset('assetsForAdmin')}}/vendors/chart.js/Chart.min.js"></script>
+    <script src="{{asset('assetsForAdmin')}}/js/jquery.cookie.js" type="text/javascript"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="{{asset('assetsForAdmin')}}/js/off-canvas.js"></script>
+    <script src="{{asset('assetsForAdmin')}}/js/hoverable-collapse.js"></script>
+    <script src="{{asset('assetsForAdmin')}}/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="{{asset('assetsForAdmin')}}/js/dashboard.js"></script>
+    <script src="{{asset('assetsForAdmin')}}/js/todolist.js"></script>
+    <!-- End custom js for this page -->
 </div>
 </body>
 </html>
