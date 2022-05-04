@@ -292,6 +292,16 @@
                     <form class="forms-sample" action="/admin/category/update/{{$data->id}}" method="POST" enctype="multipart/form-data">
                         @csrf
 
+                        <div class="form-group">
+                            <label for="exampleSelectGender">Please Select a Category </label>
+                            <select  class="form-control" id="exampleSelectGender" name="parent_id" >
+                                <option  value="0" selected="selected">Main Category</option>
+                                @foreach($datalist as $rs)
+                                    <option value="{{$rs->id}}" @if($rs->id ==$data->parent_id) selected="selected" @endif> {{\App\Http\Controllers\AdminPanel\CategoryController::getParentTree($rs, $rs->title)}} </option>
+                                @endforeach
+                            </select>
+                        </div>
+
 
                         <div class="form-group">
                             <label for="exampleInputName1">Please enter title</label>

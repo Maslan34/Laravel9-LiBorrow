@@ -288,10 +288,18 @@
         <div class="col-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Basic form elements</h4>
-                    <p class="card-description"> Basic form elements </p>
                     <form class="forms-sample" action="/admin/category/store" method="POST" enctype="multipart/form-data">
                         @csrf
+                        <div class="form-group">
+                            <label for="exampleSelectGender">Please Select a Category </label>
+                            <select class="form-control" id="exampleSelectGender" name="parent_id">
+                                <option value="0" selected="selected">Main Category</option>
+                                @foreach($data as $rs)
+                                    <option value="{{$rs->id}}">{{\App\Http\Controllers\AdminPanel\CategoryController::getParentTree($rs,$rs->title)}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
                         <div class="form-group">
                             <label for="exampleInputName1">Please enter title</label>
                             <input type="text" class="form-control" name="title" placeholder="Title">

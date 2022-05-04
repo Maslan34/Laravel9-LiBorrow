@@ -9,6 +9,23 @@ use Illuminate\Support\Facades\Storage;
 
 class CategoryController extends Controller
 {
+
+    protected $appends =['getParentTree'];
+
+    public static function getParentTree($category, $title){
+        if ($category->parent_id == 0){
+            return $title;
+        }
+
+        $parent = Category::find($category->parent_id);
+        $title=$parent->title.'>'.$title;
+
+        return CategoryController::getParentTree($parent,$title);
+
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -28,7 +45,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.category.create');
+        $data= Category::all();// getting data from data base
+        return view('admin.category.create',['data' => $data]);
     }
 
     /**
@@ -41,7 +59,7 @@ class CategoryController extends Controller
     {
         $data = new Category();
         $data->title =$request->title;
-        $data->parent_id =0;
+        $data->parent_id =$request->parent_id;
         $data->keywords =$request->keywords;
         $data->description =$request->description;
         $data->status =$request->status;
@@ -75,7 +93,8 @@ class CategoryController extends Controller
     public function edit(Category $category,$id)
     {
         $data= Category::find($id);// getting data from data base by using id
-        return view('admin.category.edit',['data' => $data]);
+        $datalist= Category::all();
+        return view('admin.category.edit',['data' => $data, 'datalist' => $datalist]);
 
     }
 
@@ -89,7 +108,7 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category,$id)
     {
         $data= Category::find($id);
-        $data->parent_id=0;
+        $data->parent_id =$request->parent_id;
         $data->title =$request->title;
         $data->keywords =$request->keywords;
         $data->description =$request->description;
@@ -112,7 +131,9 @@ class CategoryController extends Controller
     public function destroy(Category $category,$id)
     {
         $data=Category::find($id);
-        Storage::delete($data->image);
+        if($data->image){
+            Storage::delete($data->image);
+        }
         $data->delete();
         return  redirect('/admin/category');
     }
