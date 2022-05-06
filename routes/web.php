@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminPanel\BookController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminPanel\AdminController;
@@ -58,6 +59,29 @@ Route::get('/show/{id}','show'
 )->name('show');//the path we used here defined at the top as a AdminCategoryContoller
 });
 });
+//************ADMİN PANEL CATEGORY ROUTES**********************
+
+
+
+
+
+//************ADMİN BOOK ROUTES**********************
+Route::prefix('admin')->name('admin.')->group(function () { // php artisan route:list check with this
+    Route::get('/',[AdminController::class,'indexAdmin'])->name('index');
+
+//************ADMİN PANEL CATEGORY ROUTES**********************
+    Route::prefix('/book')->name('book.')->controller(BookController::class)->group(function () {
+        Route::get('','index')->name('index'); //the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/create','create')->name('create');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::post('/store','store')->name('store');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/edit/{id}','edit')->name('edit');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::post('/update/{id}','update')->name('update');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/destroy/{id}','destroy')->name('destroy');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/show/{id}','show'
+        )->name('show');//the path we used here defined at the top as a AdminCategoryContoller
+    });
+});
+//************ADMİN PANEL CATEGORY ROUTES**********************
 
 
 //************ADMİN PANEL**********************
