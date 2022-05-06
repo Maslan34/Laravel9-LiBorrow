@@ -233,58 +233,58 @@
                 <li class="nav-item sidebar-actions">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
+                    <a class="nav-link" href="{{route('admin.category.index')}}">
                         <span class="menu-title">Categories</span>
-                        <i class="mdi mdi-apps"></i>
+                        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title icon-lg">Products</span>
-                        <i class="mdi mdi-border-all"></i>
+                    <a class="nav-link" href="{{route('admin.book.index')}}">
+                        <span class="menu-title icon-lg">Books</span>
+                        <i class="mdi mdi-book-open-page-variant menu-icon"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Users</span>
-                        <i class="mdi mdi-account-box"></i>
+                        <i class="mdi mdi-account-box menu-icon"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Comments</span>
-                        <i class="mdi mdi-comment"></i>
+                        <i class="mdi mdi-comment menu-icon"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Messages</span>
-                        <i class="mdi mdi-bell-ring-outline"></i>
+                        <i class="mdi mdi-bell-ring-outline menu-icon"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Social</span>
-                        <i class="mdi mdi-account-multiple"></i>
+                        <i class="mdi mdi-account-multiple menu-icon"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">FAQ</span>
-                        <i class="mdi mdi-comment-question-outline"></i>
+                        <i class="mdi mdi-comment-question-outline menu-icon"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.index')}}">
                         <span class="menu-title">Settings</span>
-                        <i class="mdi mdi-settings"></i>
+                        <i class="mdi mdi-settings menu-icon"></i>
                     </a>
                 </li>
 
