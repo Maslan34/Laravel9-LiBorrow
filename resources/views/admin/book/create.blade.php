@@ -10,13 +10,19 @@
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
+
+    <!-- Plugin javascript for this page -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+    <!-- End plugin javascript for this page -->
+
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/css/style.css">
+
+
+
     <!-- End layout styles -->
+
     <link rel="shortcut icon" href="{{asset('assetsForAdmin')}}/images/favicon.ico" />
 </head>
 <body>
@@ -358,6 +364,21 @@
                         <div class="form-group">
                             <label for="exampleInputName1">Please enter Comission Rate</label>
                             <input type="number" class="form-control" name="comission_rate" placeholder="Comission Rate" value="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword4">Please Enter Detail Info For This Book</label>
+                            <textarea class="form-control" name="detail"  id="detail" placeholder="Detail For Book"></textarea>
+                            <script>
+                                ClassicEditor
+                                    .create( document.querySelector( '#detail' ) )
+                                    .then( editor => {
+                                        console.log( editor );
+                                    } )
+                                    .catch( error => {
+                                        console.error( error );
+                                    } );
+                            </script>
                         </div>
 
 

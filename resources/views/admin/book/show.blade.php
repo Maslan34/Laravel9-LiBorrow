@@ -351,7 +351,7 @@
                         <tbody>
                         <tr class="table-info">
                             <td> {{$data->id}} </td>
-                            <td> {{ \App\Http\Controllers\AdminPanel\CategoryController::getParentTree($data->passCategoryModel, $data->passCategoryModel->title}}</td>
+                            <td> {{ \App\Http\Controllers\AdminPanel\CategoryController::getParentTree($data->passCategoryModel, $data->passCategoryModel->title)}}</td>
                             <td> {{$data->title}}  </td>
                             <td> {{$data->keywords}}  </td>
                             <td> {{$data->description}}  </td>
@@ -362,6 +362,7 @@
                             <td> {{$data->rates}}  </td>
                             <td> {{$data->quantity}}  </td>
                             <td> {{$data->min_quantity}}  </td>
+                            <td> { !! $data->detail_info !! }  </td>      <!-- To render detail info we must add !! signs-->
                             <td> {{$data->status}}  </td>
                             <td> {{$data->created_at}}  </td>
                             <td> {{$data->updated_at}}  </td>

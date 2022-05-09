@@ -135,6 +135,7 @@ class BookController extends Controller
         $data->parent_id =$request->parent_id;
         $data->keywords =$request->keywords;
         $data->description =$request->description;
+        $data->detail_info =$request->detail_info;
         $data->status =$request->status;
         if($request->file('image')){ // for image uploading
             $data->image=$request->file('image')->store('images');
