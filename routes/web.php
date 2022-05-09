@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminPanel\AdminController;
 use App\Http\Controllers\AdminPanel\CategoryController as AdminCategoryController;
+use \App\Http\Controllers\AdminPanel\ImageController as AdminImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +44,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 
+
 //************ADMİN PANEL**********************
 Route::prefix('admin')->name('admin.')->group(function () { // php artisan route:list check with this
 Route::get('/',[AdminController::class,'indexAdmin'])->name('index');
@@ -77,11 +79,31 @@ Route::prefix('admin')->name('admin.')->group(function () { // php artisan route
         Route::get('/edit/{id}','edit')->name('edit');//the path we used here defined at the top as a AdminCategoryContoller
         Route::post('/update/{id}','update')->name('update');//the path we used here defined at the top as a AdminCategoryContoller
         Route::get('/destroy/{id}','destroy')->name('destroy');//the path we used here defined at the top as a AdminCategoryContoller
-        Route::get('/show/{id}','show'
-        )->name('show');//the path we used here defined at the top as a AdminCategoryContoller
+        Route::get('/show/{id}','show')->name('show');//the path we used here defined at the top as a AdminCategoryContoller
     });
 });
+
 //************ADMİN PANEL CATEGORY ROUTES**********************
+
+
+
+//************ADMİN PANEL BOOK IMAGE GALLERY ROUTES**********************
+Route::prefix('admin')->name('admin.')->group(function () { // php artisan route:list check with this
+    Route::get('/',[AdminController::class,'indexAdmin'])->name('index');
+
+    Route::prefix('/image')->name('image.')->controller(AdminImageController::class)->group(function () {
+        Route::get('/{bid}','index')->name('index'); //WE NEED BOOK ID HERE
+        Route::get('/create/{bid}','create')->name('create');
+        Route::get('/edit/{id}','edit')->name('edit');
+        Route::post('/store/{bid}','store')->name('store');
+        Route::post('/update/{bid}/{id}','update')->name('update');
+        Route::get('/destroy/{bid}/{id}','destroy')->name('destroy');
+
+        //WE DONT NEED SHOW and EDIT FUNCS.
+
+    });
+});
+//************ADMİN PANEL BOOK IMAGE GALLERY ROUTES**********************
 
 
 //************ADMİN PANEL**********************

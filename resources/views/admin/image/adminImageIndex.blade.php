@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Book List</title>
+    <title>Image List</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/css/vendor.bundle.base.css">
@@ -191,122 +191,7 @@
     <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-            <ul class="nav">
-                <li class="nav-item nav-profile">
-                    <a href="#" class="nav-link">
-                        <div class="nav-profile-image">
-                            <img src="{{asset('assetsForAdmin')}}/images/faces/face1.jpg" alt="profile">
-                            <span class="login-status online"></span>
-                            <!--change to offline or busy as needed-->
-                        </div>
-                        <div class="nav-profile-text d-flex flex-column">
-                            <span class="font-weight-bold mb-2">David Grey. H</span>
-                            <span class="text-secondary text-small">Project Manager</span>
-                        </div>
-                        <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Dashboard</span>
-                        <i class="mdi mdi-home menu-icon"></i>
-                    </a>
-                </li>
 
-
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                        <span class="menu-title">Requests</span>
-                        <i class="menu-arrow"></i>
-                        <i class="mdi mdi-medical-bag menu-icon"></i>
-                    </a>
-                    <div class="collapse" id="general-pages">
-                        <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="#"> ongoing Requests </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> Completed Requests </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> Register </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> 404 </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> 500 </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item sidebar-actions">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.category.index')}}">
-                        <span class="menu-title">Categories</span>
-                        <i class="mdi mdi-apps menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.book.index')}}">
-                        <span class="menu-title icon-lg">Books</span>
-                        <i class="mdi mdi-book-open-page-variant menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Users</span>
-                        <i class="mdi mdi-account-box menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Comments</span>
-                        <i class="mdi mdi-comment menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Messages</span>
-                        <i class="mdi mdi-bell-ring-outline menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Social</span>
-                        <i class="mdi mdi-account-multiple menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">FAQ</span>
-                        <i class="mdi mdi-comment-question-outline menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Settings</span>
-                        <i class="mdi mdi-settings menu-icon"></i>
-                    </a>
-                </li>
-
-                <span class="nav-link">
-
-
-
-
-
-                <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
-                <div class="mt-4">
-                  <div class="border-bottom">
-                    <p class="text-secondary">Membership Categories</p>
-                  </div>
-                  <ul class="gradient-bullet-list mt-4">
-                    <li>Free</li>
-                    <li>Pro</li>
-                  </ul>
-                </div>
-              </span>
-                </li>
-            </ul>
         </nav>
         <!-- partial -->
         <div class="main-panel">
@@ -315,7 +200,7 @@
                     <h3 class="page-title">
                 <span class="page-title-icon bg-gradient-primary text-white me-2">
                   <i class="mdi mdi-home"></i>
-                </span> Book List
+                </span> Image List
                     </h3>
                     <nav aria-label="breadcrumb">
                         <ul class="breadcrumb">
@@ -326,10 +211,6 @@
                     </nav>
                 </div>
 
-                <div class="page-header">
-                    <a href="/admin/book/create" ><button  type="button" href="/admin/ook/create" class="btn btn-inverse-primary btn-fw ">Add Book</button> </a>
-                </div>
-
                 <div class="card">
                     <div class="card-body">
                         </p>
@@ -337,12 +218,7 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Category</th>
-                                <th>Title</th>
-                                <th>Keywords</th>
-                                <th>Description</th>
-                                <th>Image</th>
-                                <th>Image Gallery</th>
+
                                 <th>Status</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
@@ -352,22 +228,18 @@
                             <tbody>
                             @foreach($data as $RowSet)
                                 <tr>
+
                                     <td>{{$RowSet->id}}</td>
-                                    <td>{{$RowSet->category}}</td>
-                                    <td>{{$RowSet->title}}</td>
-                                    <td>{{$RowSet->keywords}}</td>
-                                    <td>{{$RowSet->description}}</td>
                                     <td>
                                         @if($RowSet->image)
-                                            <img src="{{asset('')}}" style="height: 50px">
+                                            <img src="{{Illuminate\Support\Facades\Storage::url($RowSet->image)}}" style="height: 50px">
                                         @endif
                                     </td>
-                                    <td> <a   href="{{route('admin.image.index',['bid' => $RowSet->id])}}" }} onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"> <img src="{{'/assetsForAdmin/assets/images/dashboard/img_5.jpg'}}" alt="image"></a></td>
-                                    <td>{{$RowSet->status}}</td>
 
-                                    <td><a href="/admin/book/edit/{{$RowSet->id}}"><button type="button"  class="btn btn-gradient-danger btn-rounded btn-fw">Edit</button></a><td>
-                                    <td><a href="/admin/book/destroy/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
-                                    <td><a href="/admin/book/show/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Show</button></a><td>
+                                    <td>{{$RowSet->status}}</td>
+                                    <td><a href="/admin/category/edit/{{$RowSet->id}}"><button type="button"  class="btn btn-gradient-danger btn-rounded btn-fw">Edit</button></a><td>
+                                    <td><a href="/admin/category/destroy/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
+                                    <td><a href="/admin/category/show/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Show</button></a><td>
                                 </tr>
                             @endforeach
 

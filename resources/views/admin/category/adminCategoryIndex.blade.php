@@ -357,7 +357,8 @@
                                     <td>{{$RowSet->description}}</td>
                                     <td>
                                         @if($RowSet->image)
-                                            <img src="{{Illuminate\Support\Facades\Storage::url($RowSet->image)}}" style="height: 50px">
+
+                                            <img src="{{\Illuminate\Support\Facades\Storage::url($RowSet->image)}}" style="height: 50px">
                                         @endif
                                     </td>
 

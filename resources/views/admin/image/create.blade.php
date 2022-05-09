@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Book List</title>
+    <title>Purple Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{asset('assetsForAdmin')}}/vendors/css/vendor.bundle.base.css">
@@ -212,92 +212,68 @@
                         <i class="mdi mdi-home menu-icon"></i>
                     </a>
                 </li>
-
-
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                        <span class="menu-title">Requests</span>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-title">Basic UI Elements</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/ui-features/buttons.html">Buttons</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/ui-features/typography.html">Typography</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/icons/mdi.html">
+                        <span class="menu-title">Icons</span>
+                        <i class="mdi mdi-contacts menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/forms/basic_elements.html">
+                        <span class="menu-title">Forms</span>
+                        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/charts/chartjs.html">
+                        <span class="menu-title">Charts</span>
+                        <i class="mdi mdi-chart-bar menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/tables/basic-table.html">
+                        <span class="menu-title">Tables</span>
+                        <i class="mdi mdi-table-large menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#general-{{asset('assetsForAdmin')}}/pages" aria-expanded="false" aria-controls="general-{{asset('assetsForAdmin')}}/pages">
+                        <span class="menu-title">Sample Pages</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-medical-bag menu-icon"></i>
                     </a>
-                    <div class="collapse" id="general-pages">
+                    <div class="collapse" id="general-{{asset('assetsForAdmin')}}/pages">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="#"> ongoing Requests </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> Completed Requests </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> Register </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> 404 </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#"> 500 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/blank-page.html"> Blank Page </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/login.html"> Login </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/register.html"> Register </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/error-404.html"> 404 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/error-500.html"> 500 </a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item sidebar-actions">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.category.index')}}">
-                        <span class="menu-title">Categories</span>
-                        <i class="mdi mdi-apps menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.book.index')}}">
-                        <span class="menu-title icon-lg">Books</span>
-                        <i class="mdi mdi-book-open-page-variant menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Users</span>
-                        <i class="mdi mdi-account-box menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Comments</span>
-                        <i class="mdi mdi-comment menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Messages</span>
-                        <i class="mdi mdi-bell-ring-outline menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Social</span>
-                        <i class="mdi mdi-account-multiple menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">FAQ</span>
-                        <i class="mdi mdi-comment-question-outline menu-icon"></i>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">
-                        <span class="menu-title">Settings</span>
-                        <i class="mdi mdi-settings menu-icon"></i>
-                    </a>
-                </li>
-
-                <span class="nav-link">
-
-
-
-
-
+              <span class="nav-link">
+                <div class="border-bottom">
+                  <h6 class="font-weight-normal mb-3">Projects</h6>
+                </div>
                 <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
                 <div class="mt-4">
                   <div class="border-bottom">
-                    <p class="text-secondary">Membership Categories</p>
+                    <p class="text-secondary">Categories</p>
                   </div>
                   <ul class="gradient-bullet-list mt-4">
                     <li>Free</li>
@@ -309,107 +285,144 @@
             </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
-            <div class="content-wrapper">
-                <div class="page-header">
-                    <h3 class="page-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2">
-                  <i class="mdi mdi-home"></i>
-                </span> Book List
-                    </h3>
-                    <nav aria-label="breadcrumb">
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item active" aria-current="page">
-                                <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                            </li>
-                        </ul>
-                    </nav>
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <form class="forms-sample" action="/admin/book/store" method="POST" enctype="multipart/form-data">
+                        @csrf
+
+                        <div class="form-group">
+                            <label for="exampleSelectGender">Please Select a Category </label>
+                            <select class="form-control" id="exampleSelectGender" name="category_id">
+
+                                @foreach($data as $rs)
+                                    <option value="{{$rs->id}}">{{\App\Http\Controllers\AdminPanel\CategoryController::getParentTree($rs,$rs->title)}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter title</label>
+                            <input type="text" class="form-control" name="title" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail3">Please enter keywords</label>
+                            <input type="text" class="form-control" name="keywords" placeholder="keywords">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword4">Please enter description</label>
+                             <textarea class="form-control" name="description" placeholder="Description"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Parent Id</label>
+                            <input type="number" class="form-control" name="parent_id" placeholder="Parent Id" value="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Author</label>
+                            <input type="text" class="form-control" name="author" placeholder="Author" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Pages</label>
+                            <input type="number" class="form-control" name="pages" placeholder="Pages" value="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Price</label>
+                            <input type="number" class="form-control" name="price" placeholder="Price" value="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Quantity</label>
+                            <input type="number" class="form-control" name="quantitiy" placeholder="Quantity" value="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Min Quantity</label>
+                            <input type="number" class="form-control" name="min_quantitiy" placeholder="Min Quantity" value="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Awards Taken</label>
+                            <input type="text" class="form-control" name="awards_taken" placeholder="Awards Taken">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Year of Publication</label>
+                            <input type="number" class="form-control" name="year_of_publication" placeholder="Year of Publication" value="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Please enter Comission Rate</label>
+                            <input type="number" class="form-control" name="comission_rate" placeholder="Comission Rate" value="0">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="exampleSelectGender">Status</label>
+                            <select class="form-control" id="exampleSelectGender" name="status">
+                                <option>True</option>
+                                <option>False</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>File upload</label>
+                            <input type="file" name="img[]" class="file-upload-default">
+                            <div class="input-group col-xs-12">
+                                <input type="file" class="form-control file-upload-info" name="image" placeholder="Upload Image">
+                                <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                          </span>
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
                 </div>
-
-                <div class="page-header">
-                    <a href="/admin/book/create" ><button  type="button" href="/admin/ook/create" class="btn btn-inverse-primary btn-fw ">Add Book</button> </a>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        </p>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Category</th>
-                                <th>Title</th>
-                                <th>Keywords</th>
-                                <th>Description</th>
-                                <th>Image</th>
-                                <th>Image Gallery</th>
-                                <th>Status</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
-                                <th>Show</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($data as $RowSet)
-                                <tr>
-                                    <td>{{$RowSet->id}}</td>
-                                    <td>{{$RowSet->category}}</td>
-                                    <td>{{$RowSet->title}}</td>
-                                    <td>{{$RowSet->keywords}}</td>
-                                    <td>{{$RowSet->description}}</td>
-                                    <td>
-                                        @if($RowSet->image)
-                                            <img src="{{asset('')}}" style="height: 50px">
-                                        @endif
-                                    </td>
-                                    <td> <a   href="{{route('admin.image.index',['bid' => $RowSet->id])}}" }} onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"> <img src="{{'/assetsForAdmin/assets/images/dashboard/img_5.jpg'}}" alt="image"></a></td>
-                                    <td>{{$RowSet->status}}</td>
-
-                                    <td><a href="/admin/book/edit/{{$RowSet->id}}"><button type="button"  class="btn btn-gradient-danger btn-rounded btn-fw">Edit</button></a><td>
-                                    <td><a href="/admin/book/destroy/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Delete</button></a><td>
-                                    <td><a href="/admin/book/show/{{$RowSet->id}}"><button type="button" class="btn btn-gradient-danger btn-rounded btn-fw">Show</button></a><td>
-                                </tr>
-                            @endforeach
-
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-
-
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="container-fluid d-flex justify-content-between">
-                        <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-                        <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
-                    </div>
-                </footer>
-                <!-- partial -->
             </div>
-            <!-- main-panel ends -->
         </div>
-        <!-- page-body-wrapper ends -->
+
+
+
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="{{asset('assetsForAdmin')}}/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="{{asset('assetsForAdmin')}}/vendors/chart.js/Chart.min.js"></script>
-    <script src="{{asset('assetsForAdmin')}}/js/jquery.cookie.js" type="text/javascript"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="{{asset('assetsForAdmin')}}/js/off-canvas.js"></script>
-    <script src="{{asset('assetsForAdmin')}}/js/hoverable-collapse.js"></script>
-    <script src="{{asset('assetsForAdmin')}}/js/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="{{asset('assetsForAdmin')}}/js/dashboard.js"></script>
-    <script src="{{asset('assetsForAdmin')}}/js/todolist.js"></script>
-    <!-- End custom js for this page -->
+
 </div>
+</div>
+<!-- content-wrapper ends -->
+<!-- partial:partials/_footer.html -->
+<footer class="footer">
+    <div class="container-fluid d-flex justify-content-between">
+        <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+        <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+    </div>
+</footer>
+<!-- partial -->
+</div>
+<!-- main-panel ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="{{asset('assetsForAdmin')}}/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="{{asset('assetsForAdmin')}}/vendors/chart.js/Chart.min.js"></script>
+<script src="{{asset('assetsForAdmin')}}/js/jquery.cookie.js" type="text/javascript"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="{{asset('assetsForAdmin')}}/js/off-canvas.js"></script>
+<script src="{{asset('assetsForAdmin')}}/js/hoverable-collapse.js"></script>
+<script src="{{asset('assetsForAdmin')}}/js/misc.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="{{asset('assetsForAdmin')}}/js/dashboard.js"></script>
+<script src="{{asset('assetsForAdmin')}}/js/todolist.js"></script>
+<!-- End custom js for this page -->
 </body>
 </html>
