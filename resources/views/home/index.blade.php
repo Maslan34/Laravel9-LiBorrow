@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Kindle : Home</title>
+    <title>Liborrow : Home</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="{{asset('assetsForFront')}}/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -56,7 +56,7 @@
                     </button>
 
                     <!-- Text Logo -->
-                    <a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> Kindle</a>
+                    <a class="navbar-brand" href="{{route('home')}}"><i class="fa fa-book" aria-hidden="true"></i> Liborrow</a>
 
                     <!-- Image Logo -->
                     <!-- <a class="navbar-brand" href="index.html"><img src="{{asset('assetsForFront')}}/images/logo.png"></a> -->
@@ -68,10 +68,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav mu-menu navbar-right">
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#mu-book-overview">OVERVIEW</a></li>
+                        <li><a href="#mu-book-overview">10 BEST</a></li>
                         <li><a href="#mu-author">AUTHOR</a></li>
                         <li><a href="#mu-pricing">PRICE</a></li>
-                        <li><a href="#mu-testimonials">TESTIMONIALS</a></li>
+                        <li><a href="#mu-testimonials">3 BEST</a></li>
                         <li><a href="#mu-contact">CONTACT</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -126,7 +126,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="mu-single-counter">
                                         <i class="fa fa-files-o" aria-hidden="true"></i>
-                                        <div class="counter-value" data-count="650">0</div>
+                                        <div class="counter-value" data-count="749.345">0</div>
                                         <h5 class="mu-counter-name">Total Pages</h5>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="mu-single-counter">
                                         <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                        <div class="counter-value" data-count="422">0</div>
+                                        <div class="counter-value" data-count="33.298">0</div>
                                         <h5 class="mu-counter-name">Chapters</h5>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="mu-single-counter">
                                         <i class="fa fa-users" aria-hidden="true"></i>
-                                        <div class="counter-value" data-count="1055">0</div>
+                                        <div class="counter-value" data-count="10.989">0</div>
                                         <h5 class="mu-counter-name">Active Readers</h5>
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="mu-single-counter">
                                         <i class="fa fa-trophy" aria-hidden="true"></i>
-                                        <div class="counter-value" data-count="03">0</div>
+                                        <div class="counter-value" data-count="36">0</div>
                                         <h5 class="mu-counter-name">Got Awards</h5>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@
                     <div class="mu-book-overview-area">
 
                         <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">Book Overview</h2>
+                            <h2 class="mu-heading-title">Bu Haftanın Kitapları</h2>
                             <span class="mu-header-dot"></span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                         </div>
@@ -211,6 +211,59 @@
                                         <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
                                     </div>
                                 </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-cubes" aria-hidden="true"></i>
+											</span>
+                                        <h4>Chapter Two</h4>
+                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-cubes" aria-hidden="true"></i>
+											</span>
+                                        <h4>Chapter Two</h4>
+                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-cubes" aria-hidden="true"></i>
+											</span>
+                                        <h4>Chapter Two</h4>
+                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-cubes" aria-hidden="true"></i>
+											</span>
+                                        <h4>Chapter Two</h4>
+                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-cubes" aria-hidden="true"></i>
+											</span>
+                                        <h4>Chapter Two</h4>
+                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                    </div>
+                                </div>
+
+
                                 <!-- / Book Overview Single Content -->
 
                                 <!-- About Us Single Content -->
@@ -274,7 +327,7 @@
                                 <!-- / Book Overview Single Content -->
 
                                 <!-- About Us Single Content -->
-                                <div class="col-md-3 col-sm-6">
+                                <div class="col-md-3 col-sm-6" style="margin-left: 450px">
                                     <div class="mu-book-overview-single">
 											<span class="mu-book-overview-icon-box">
 												<i class="fa fa-wpforms" aria-hidden="true"></i>
@@ -332,7 +385,7 @@
                     <div class="mu-author-area">
 
                         <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">About The Author</h2>
+                            <h2 class="mu-heading-title">Haftanın Yazarı</h2>
                             <span class="mu-header-dot"></span>
                         </div>
 
@@ -495,30 +548,24 @@
                         </div>
 
                         <div class="mu-testimonials-block">
+
+
                             <ul class="mu-testimonial-slide">
 
+                                @foreach($sliderForBooks as $data)
                                 <li>
-                                    <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-                                    <img class="mu-rt-img" src="{{asset('assetsForFront')}}/images/reader-1.jpg" alt="img">
-                                    <h5 class="mu-rt-name"> - Alice Boga</h5>
-                                    <span class="mu-rt-title">CEO, Apple Inc.</span>
+                                    <p>"{{$data->keywords}}"</p>
+                                    <img class="mu-rt-img" src="" alt="img">
+                                    <h5 class="mu-rt-name"> {{$data->title}}</h5>
+                                    <span class="mu-rt-title">Page:{{$data->pages}}</span>
                                 </li>
 
-                                <li>
-                                    <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-                                    <img class="mu-rt-img" src="{{asset('assetsForFront')}}/images/reader-2.jpg" alt="img">
-                                    <h5 class="mu-rt-name"> - Jhon Doe</h5>
-                                    <span class="mu-rt-title">Director, Google Inc.</span>
-                                </li>
+                                @endforeach()
 
-                                <li>
-                                    <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-                                    <img class="mu-rt-img" src="{{asset('assetsForFront')}}/images/reader-3.jpg" alt="img">
-                                    <h5 class="mu-rt-name"> - Jessica Doe</h5>
-                                    <span class="mu-rt-title">Web Developer</span>
-                                </li>
+
 
                             </ul>
+
                         </div>
 
 

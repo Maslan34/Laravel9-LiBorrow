@@ -20,11 +20,11 @@ use \App\Http\Controllers\AdminPanel\ImageController as AdminImageController;
 
 Route::get('/welcome',[HomeController::class,'welcome'])->name('welcome');
 
-Route::get('/', function () {
-    return view('home.index');
-});
 
-Route::get('/test',[HomeController::class,'test'])->name('test');
+
+Route::get('/',[HomeController::class,'index'])->name('home');
+
+
 
 
 
@@ -35,7 +35,7 @@ Route::get('/test',[HomeController::class,'test'])->name('test');
 //Route::get('/',[AdminController::class,'index'])->name('home');
 
 //5-with parameters
-Route::get('/param{}',[AdminController::class,'index'])->name('home');
+//Route::get('/param{}',[AdminController::class,'index'])->name('home');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
