@@ -327,7 +327,7 @@
 
 
                     <h4 class="card-title" id="correction1">Here is the information </h4>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-hover" style="width:80%">
                         <thead>
                         <tr>
                             <th> # </th>

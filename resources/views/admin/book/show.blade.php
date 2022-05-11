@@ -326,7 +326,7 @@
 
 
                     <h4 class="card-title" id="correction1">Here is the information  of {{$data->title}}</h4>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" style="width: 400px">
                         <thead>
                         <tr>
                             <th> # </th>
@@ -351,7 +351,7 @@
                         <tbody>
                         <tr class="table-info">
                             <td> {{$data->id}} </td>
-                            <td> {{ \App\Http\Controllers\AdminPanel\CategoryController::getParentTree($data->passCategoryModel, $data->passCategoryModel->title)}}</td>
+                            <td> {{$data->passCategoryModel->title}}</td>
                             <td> {{$data->title}}  </td>
                             <td> {{$data->keywords}}  </td>
                             <td> {{$data->description}}  </td>

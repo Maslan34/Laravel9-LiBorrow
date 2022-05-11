@@ -70,7 +70,6 @@ class BookController extends Controller
         $data->author =$request->author;
         $data->year_of_publication =$request->year_of_publication;
         $data->awards_taken =$request->awards_taken;
-        $data->parent_id =$request->parent_id;
         $data->keywords =$request->keywords;
         $data->description =$request->description;
         $data->status =$request->status;
@@ -132,7 +131,7 @@ class BookController extends Controller
         $data->author =$request->author;
         $data->year_of_publication =$request->year_of_publication;
         $data->awards_taken =$request->awards_taken;
-        $data->parent_id =$request->parent_id;
+
         $data->keywords =$request->keywords;
         $data->description =$request->description;
         $data->detail_info =$request->detail_info;
@@ -158,7 +157,7 @@ class BookController extends Controller
             Storage::delete($data->image);
         }
         $data->delete();
-        return  redirect('/admin');
+        return  redirect('/admin/book');
     }
 }
 

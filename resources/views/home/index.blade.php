@@ -186,160 +186,34 @@
                         </div>
 
                         <!-- Start Book Overview Content -->
+                        @foreach($datalist as $rs)
                         <div class="mu-book-overview-content">
+
                             <div class="row">
 
                                 <!-- Book Overview Single Content -->
                                 <div class="col-md-3 col-sm-6">
+
                                     <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-area-chart" aria-hidden="true"></i>
+											<span class="mu-book-overview-icon-box" >
+											    <img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}">
 											</span>
-                                        <h4>Chapter One</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                        <h4>{{$rs->title}}</h4>
+                                        <p>{{$rs->description}}</p>
+                                        <p>{{$rs->price}}</p>
                                     </div>
+
                                 </div>
-                                <!-- / Book Overview Single Content -->
-
-                                <!-- About Us Single Content -->
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-cubes" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Two</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-cubes" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Two</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-cubes" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Two</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-cubes" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Two</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-cubes" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Two</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-cubes" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Two</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-
 
                                 <!-- / Book Overview Single Content -->
 
                                 <!-- About Us Single Content -->
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-modx" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Three</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-                                <!-- / Book Overview Single Content -->
 
-                                <!-- About Us Single Content -->
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-files-o" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Four</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-                                <!-- / Book Overview Single Content -->
-
-                                <!-- Book Overview Single Content -->
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Five</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-                                <!-- / Book Overview Single Content -->
-
-                                <!-- About Us Single Content -->
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-language" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Six</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-                                <!-- / Book Overview Single Content -->
-
-                                <!-- About Us Single Content -->
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-gg" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Seven</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-                                <!-- / Book Overview Single Content -->
-
-                                <!-- About Us Single Content -->
-                                <div class="col-md-3 col-sm-6" style="margin-left: 450px">
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-wpforms" aria-hidden="true"></i>
-											</span>
-                                        <h4>Chapter Eight</h4>
-                                        <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-                                    </div>
-                                </div>
-                                <!-- / Book Overview Single Content -->
 
                             </div>
+
                         </div>
+                    @endforeach
                         <!-- End Book Overview Content -->
 
                     </div>
