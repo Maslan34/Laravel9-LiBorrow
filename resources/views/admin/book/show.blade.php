@@ -351,7 +351,7 @@
                         <tbody>
                         <tr class="table-info">
                             <td> {{$data->id}} </td>
-                            <td> {{$data->passCategoryModel->title}}</td>
+                            <td> !!</td>
                             <td> {{$data->title}}  </td>
                             <td> {{$data->keywords}}  </td>
                             <td> {{$data->description}}  </td>

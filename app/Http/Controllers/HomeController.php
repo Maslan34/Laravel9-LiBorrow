@@ -8,7 +8,12 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
 
+    public function  book($id){
 
+
+        $book=Book::find($id);
+        return view('home.book',['book'=>$book]);
+    }
 
     public function  index(){
 

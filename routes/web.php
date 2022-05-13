@@ -24,7 +24,7 @@ Route::get('/welcome',[HomeController::class,'welcome'])->name('welcome');
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 
-
+Route::get('/book/{id}',[HomeController::class,'book'])->name('book_detail');
 
 
 

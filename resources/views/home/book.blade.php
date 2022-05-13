@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Liborrow : Home</title>
+    <title>Liborrow : Home</title>"
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="{{asset('assetsForFront')}}/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -180,41 +180,56 @@
                     <div class="mu-book-overview-area">
 
                         <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">BOOKS OF THE WEEK</h2>
+                            <h2 class="mu-heading-title">{{$book->title}}</h2>
                             <span class="mu-header-dot"></span>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                         </div>
 
-                        <!-- Start Book Overview Content -->
-                        @foreach($datalist as $rs)
-                        <div class="mu-book-overview-content">
-
+                        <!-- Start Author Content -->
+                        <div class="mu-author-content">
                             <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mu-author-image">
+                                        <img src="{{$book->image}}" alt="Author Image" width="800" height="676">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mu-author-info">
+                                        <h3>Author:{{$book->author}}</h3>
+                                        <h4>Category:</h4>
+                                        <p>Tanım:{{$book->description}}</p>
 
-                                <!-- Book Overview Single Content -->
-                                <div class="col-md-3 col-sm-6">
+                                        <h4>PRICE:{{$book->price}}</h4>
 
-                                    <div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box" >
-											    <img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}">
-											</span>
-                                        <h4>{{$rs->title}}</h4>
-                                        <p>{{$rs->description}}</p>
-                                        <p>{{$rs->price}}</p>
+
+                                        <div class="mu-pricing-single-footer" style="margin-top: 40px;margin-left: 20px">
+                                            <a href="#" class="mu-order-btn">BUY IT!</a>
+                                        </div>
+
+
+
                                     </div>
 
                                 </div>
-
-                                <!-- / Book Overview Single Content -->
-
-                                <!-- About Us Single Content -->
-
-
                             </div>
+                        </div>
+                        <!-- End Author Content -->
+
+                    </div>
+                    <div class="col-md-push-4" >
+                        <div class="mu-author-info">
+                            <h3>BOOKS INFORMATION</h3>
+                            <p>PAGES:{{$book->pages}}</p>
+                            <p>YEAR OF PUBLICATION:{{$book->year_of_publication}}</p>
+                            <p>COMISSION RATE:{{$book->comisson_rate}}</p>
+                            <p>STOCK:{{$book->quantity}}</p>
+                            <p>THE MAX NUMBER YOU CAN ORDER:{{$book->min_quantitiy}}</p>
+                            <p>DETAIL:{!!  $book->detail_ınfo !!}}</p>
+
+
+
+
 
                         </div>
-                    @endforeach
-                        <!-- End Book Overview Content -->
 
                     </div>
                 </div>
@@ -225,78 +240,7 @@
 
 
 
-    <!-- Start Video Review -->
-    <section id="mu-video-review">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-video-review-area">
 
-                        <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">Check Out Our Video Review</h2>
-                            <span class="mu-header-dot"></span>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
-                        </div>
-
-                        <!-- Start Video Review Content -->
-                        <div class="mu-video-review-content">
-                            <iframe class="mu-video-iframe" width="100%" height="480" src="https://www.youtube.com/embed/T4ySAlBt2Ug" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <!-- End Video Review Content -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Video Review -->
-
-    <!-- Start Author -->
-    <section id="mu-author">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-author-area">
-
-                        <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">Haftanın Yazarı</h2>
-                            <span class="mu-header-dot"></span>
-                        </div>
-
-                        <!-- Start Author Content -->
-                        <div class="mu-author-content">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mu-author-image">
-                                        <img src="{{asset('assetsForFront')}}/images/author.jpg" alt="Author Image">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mu-author-info">
-                                        <h3>John Doe</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo suscipit facilis ipsum ullam reiciendis odio error iste neque ratione libero rem accusamus voluptatibus, nihil unde maiores sunt nisi. Assumenda, consectetur.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, dolorem error neque! Dolores similique ut iusto odit esse ipsam, nesciunt pariatur animi minima maiores mollitia cupiditate ad ipsum deleniti perspiciatis!</p>
-                                        <img class="mu-author-sign" src="{{asset('assetsForFront')}}/images/author-signature.png" alt="Author Signature">
-
-                                        <div class="mu-author-social">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Author Content -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- End Author -->
 
     <!-- Start Pricing -->
@@ -410,45 +354,7 @@
     </section>
     <!-- End Pricing -->
 
-    <!-- Start Testimonials -->
-    <section id="mu-testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-testimonials-area">
-                        <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">YOU SHOULD READ BEFORE DIE</h2>
-                            <span class="mu-header-dot"></span>
-                        </div>
 
-                        <div class="mu-testimonials-block">
-
-
-                            <ul class="mu-testimonial-slide">
-
-                                @foreach($sliderForBooks as $data)
-                                <li>
-                                    <p>"{{$data->keywords}}"</p>
-                                    <img class="mu-rt-img" src="" alt="img">
-                                    <h5 class="mu-rt-name"> {{$data->title}}</h5>
-                                    <span class="mu-rt-title">Page:{{$data->pages}}</span>
-                                </li>
-
-                                @endforeach()
-
-
-
-                            </ul>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Testimonials -->
 
 
     <!-- Start Contact -->
