@@ -26,6 +26,8 @@ Route::get('/',[HomeController::class,'index'])->name('home');
 
 Route::get('/book/{id}',[HomeController::class,'book'])->name('book_detail');
 
+Route::get('/categoryBooks/{id}/{slug}',[HomeController::class,'categoryBooks'])->name('categoryBooks');
+
 
 
 // 3-Calling Controller

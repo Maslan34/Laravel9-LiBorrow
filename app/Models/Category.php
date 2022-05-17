@@ -18,4 +18,29 @@ class Category extends Model
     }
 
     #ONE TO MANY RELATIONSHIP with Book
+
+
+
+
+
+    #ONE TO MANY  Inverse
+
+    public function parent(){
+
+        return $this->belongsTo(Category::class, 'parent_id');
+
+    }
+
+    #ONE TO MANY  Inverse
+
+
+    #ONE TO MANY
+
+    public function children(){
+
+        return $this->hasMany(Category::class, 'parent_id');
+
+    }
+
+    #ONE TO MANY
 }

@@ -64,16 +64,68 @@
 
                 </div>
 
+                @php
+                    $mainCategories=\App\Http\Controllers\HomeController::mainCategoryList();
+                @endphp
+
+                <div class="subnav" >
+                    <button style="background-color: inherit;margin-bottom:5px" class="subnavbtn"><img  width="50px" src="{{asset("/assetsForFront/images/menü.png")}}">
+                        <i   style="color: white" class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <ul>
+
+                            <li><a href="#">10 BEST</a></li>
+                            <li><a href="#">AUTHOR</a></li>
+                            <li><div class="dropdown">
+                                    <button class="dropbtn">Categories</button>
+                                        <div class="dropdown-content">
+                                            @foreach($mainCategories as $rs)
+                                                    <ul>
+
+                                                            @if(count($rs->children))
+                                                                <div class="dropdownSubCategory">
+                                                                    <button class="dropsubbtn">{{$rs->title}}</button>
+                                                                    <div class="dropdown-subcontent">
+
+                                                                        @include('home.categoryTree',['children'=>$rs->children])
+                                                                    </div>
+
+
+                                                            @else
+                                                                {{$rs->title}}
+
+                                                            @endif
+
+                                                    </ul>
+                                            @endforeach
+                                        </div>
+
+                                </div>
+
+
+
+                            <li><a href="#">WHO WE ARE</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav mu-menu navbar-right">
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#mu-book-overview">10 BEST</a></li>
+                        <li><a href="#mu-book-overview">BOOKS OF THE WEEK</a></li>
                         <li><a href="#mu-author">AUTHOR</a></li>
                         <li><a href="#mu-pricing">PRICE</a></li>
                         <li><a href="#mu-testimonials">3 BEST</a></li>
                         <li><a href="#mu-contact">CONTACT</a></li>
+
                     </ul>
+                    </div>
+
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
