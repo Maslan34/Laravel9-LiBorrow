@@ -126,8 +126,8 @@
                     </ul>
                 </div>
 
-            </div><!-- /.navbar-collapse -->
 
+    </div><!-- /.container-fluid -->
     </nav>
     </div>
 </header>
@@ -224,189 +224,84 @@
     </section>
     <!-- End Counter -->
 
+    @foreach($books as $rs)
     <!-- Start Book Overview -->
-    <section id="mu-book-overview">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-book-overview-area">
+    <div id="TamSayfaSagSutunIciUrunlerAlani">
+        <div id="TamSayfaSagSutunIciUrunlerDengelemeAlani">
 
-                        <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">{{$book->title}}</h2>
-                            <span class="mu-header-dot"></span>
-                        </div>
-
-                        <!-- Start Author Content -->
-                        <div class="mu-author-content">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mu-author-image">
-                                        <img src="{{$book->image}}" alt="Author Image" width="800" height="676">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mu-author-info">
-                                        <h3>Author:{{$book->author}}</h3>
-                                        <h4>Category:</h4>
-                                        <p>Tanım:{{$book->description}}</p>
-
-                                        <h4>PRICE:{{$book->price}}</h4>
-
-
-                                        <div class="mu-pricing-single-footer" style="margin-top: 40px;margin-left: 20px">
-                                            <a href="#" class="mu-order-btn">BUY IT!</a>
-                                        </div>
-
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Author Content -->
-
-                    </div>
-                    <div class="col-md-push-4" >
-                        <div class="mu-author-info">
-                            <h3>BOOKS INFORMATION</h3>
-                            <p>PAGES:{{$book->pages}}</p>
-                            <p>YEAR OF PUBLICATION:{{$book->year_of_publication}}</p>
-                            <p>COMISSION RATE:{{$book->comisson_rate}}</p>
-                            <p>STOCK:{{$book->quantity}}</p>
-                            <p>THE MAX NUMBER YOU CAN ORDER:{{$book->min_quantitiy}}</p>
-                            <p>DETAIL:{!!  $book->detail_ınfo !!}}</p>
-
-
-
-
-
-                        </div>
-
-                    </div>
+            <div class="TamSayfaSagSutunIciUrunSinirlamaAlani">
+                <div class="TamSayfaSagSutunIciUrunResmiDisCercevesi">
+                    <a href="/book/{{$rs->id}}"><img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" border="0" alt="" title=""></a>
+                </div>
+                <div class="TamSayfaSagSutunIciUrunUstBaslikMetni">
+                    <a href="/book/{{$rs->id}}">{{$rs->title}}</a>
+                </div>
+                <div class="TamSayfaSagSutunIciUrunAltBaslikMetni">
+                    <a href="/book/{{$rs->id}}">{{$rs->description}}</a>
+                </div>
+                <div class="TamSayfaSagSutunIciUrunPuanYildizlariAlani">
+                    <a href="/book/{{$rs->id}}"><img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" border="0" alt="" title=""></a>
+                </div>
+                <div class="TamSayfaSagSutunIciUrunFiyatlariAlani">
+									<span class="TamSayfaSagSutunIciUzeriCiziliUrunFiyati">
+										<a href="/book/{{$rs->id}}"><del>{{$rs->price}}</del></a>
+									</span>
+                    <span class="TamSayfaSagSutunIciUrunFiyati">
+										<a href="/book/{{$rs->id}}">{{$rs->price * 0.8}}</a>
+									</span>
                 </div>
             </div>
+
+
+
         </div>
-    </section>
+    </div>
+    @endforeach
     <!-- End Book Overview -->
 
 
 
 
-    <!-- End Author -->
 
-    <!-- Start Pricing -->
-    <section id="mu-pricing">
+    <!-- Start Testimonials -->
+    <section id="mu-testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mu-pricing-area">
-
+                    <div class="mu-testimonials-area">
                         <div class="mu-heading-area">
-                            <h2 class="mu-heading-title">Our Pricing Plans</h2>
+                            <h2 class="mu-heading-title">YOU SHOULD READ BEFORE DIE</h2>
                             <span class="mu-header-dot"></span>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                         </div>
 
-                        <!-- Start Pricing Content -->
-                        <div class="mu-pricing-content">
-                            <div class="row">
-
-                                <!-- Pricing Single Content -->
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="mu-pricing-single">
-
-                                        <div class="mu-pricing-single-head">
-                                            <h4>STANDARD PLAN</h4>
-                                            <p class="mu-price-tag">
-                                                <span>$</span> 15
-                                            </p>
-                                        </div>
-
-                                        <ul class="mu-price-feature">
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                        </ul>
-
-                                        <div class="mu-pricing-single-footer">
-                                            <a href="#" class="mu-order-btn">Order Now!</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- / Pricing Single Content -->
-
-                                <!-- Pricing Single Content -->
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="mu-pricing-single mu-popular-price-tag">
+                        <div class="mu-testimonials-block">
 
 
-                                        <div class="mu-pricing-single-head">
-                                            <h4>PROFESSIONAL PLAN</h4>
-                                            <p class="mu-price-tag">
-                                                <span>$</span> 25
-                                            </p>
-                                        </div>
+                            <ul class="mu-testimonial-slide">
 
-                                        <ul class="mu-price-feature">
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                        </ul>
+                                @foreach($sliderForBooks as $data)
+                                    <li>
+                                        <p>"{{$data->keywords}}"</p>
+                                        <img class="mu-rt-img" src="" alt="img">
+                                        <h5 class="mu-rt-name"> {{$data->title}}</h5>
+                                        <span class="mu-rt-title">Page:{{$data->pages}}</span>
+                                    </li>
 
-                                        <div class="mu-pricing-single-footer">
-                                            <a href="#" class="mu-order-btn">Order Now!</a>
-                                        </div>
+                                @endforeach()
 
 
-                                    </div>
-                                </div>
-                                <!-- / Pricing Single Content -->
 
-                                <!-- Pricing Single Content -->
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="mu-pricing-single">
+                            </ul>
 
-
-                                        <div class="mu-pricing-single-head">
-                                            <h4>EXCLUSIVE PLAN</h4>
-                                            <p class="mu-price-tag">
-                                                <span>$</span> 45
-                                            </p>
-                                        </div>
-
-                                        <ul class="mu-price-feature">
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                            <li> Lorem ipsum dolor sit amet. </li>
-                                        </ul>
-
-                                        <div class="mu-pricing-single-footer">
-                                            <a href="#" class="mu-order-btn">Order Now!</a>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!-- / Pricing Single Content -->
-
-
-                            </div>
                         </div>
-                        <!-- End Pricing Content -->
+
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Pricing -->
-
-
+    <!-- End Testimonials -->
 
 
     <!-- Start Contact -->
