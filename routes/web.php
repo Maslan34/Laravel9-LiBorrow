@@ -51,6 +51,15 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::prefix('admin')->name('admin.')->group(function () { // php artisan route:list check with this
 Route::get('/',[AdminController::class,'indexAdmin'])->name('index');
 
+
+
+//************ADMİN PANEL Setting ROUTES**********************
+
+    Route::get('/settings',[AdminController::class,'settings'])->name('settings');
+    Route::post('/settingsUpdate',[AdminController::class,'settingsUpdate'])->name('settingsUpdate');
+
+//************ADMİN PANEL Setting ROUTES**********************
+
 //************ADMİN PANEL CATEGORY ROUTES**********************
         Route::prefix('/category')->name('category.')->controller(AdminCategoryController::class)->group(function () {
         Route::get('','index')->name('index'); //the path we used here defined at the top as a AdminCategoryContoller

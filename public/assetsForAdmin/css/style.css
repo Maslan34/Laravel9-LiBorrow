@@ -14448,3 +14448,39 @@ dl {
   flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+ul#setting-navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+
+ul#setting-navbar li {
+  float: left;
+}
+
+ul#setting-navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul#setting-navbar li a:hover:not(.active) {
+  background-color: #e195ee;
+}
+
+.setting-navbar-home {
+  background-color: purple;
+}

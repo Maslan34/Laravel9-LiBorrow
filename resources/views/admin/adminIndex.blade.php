@@ -227,6 +227,8 @@
                         <span class="menu-title">Books</span>
                         <i class="mdi mdi-book-open-page-variant menu-icon"></i>
                     </a>
+                </li>
+
 
 
 
@@ -245,6 +247,12 @@
                             <li class="nav-item"> <a class="nav-link" href="{{asset('assetsForAdmin')}}/pages/samples/error-500.html"> 500 </a></li>
                         </ul>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/settings">
+                        <span class="menu-title">Settings</span>
+                        <i class="mdi mdi-settings menu-icon"></i>
+                    </a>
                 </li>
                 <li class="nav-item sidebar-actions">
               <span class="nav-link">

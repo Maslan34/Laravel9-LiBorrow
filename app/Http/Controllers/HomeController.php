@@ -41,4 +41,7 @@ class HomeController extends Controller
         return view('home.categorybooks', ['category'=>$category,'books'=>$books,'sliderForBooks'=>$sliderForBooks]);
     }
 
+
+
+
 }
